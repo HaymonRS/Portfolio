@@ -1,0 +1,541 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Welcome Message in the Top Center */
+.welcome-message {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Fullscreen Header with Gradient Glowing Effect */
+header {
+    background: linear-gradient(135deg, #6a11cb, #1328a8); /* Gradient background */
+    color: white;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 0px 30px 15px rgba(101, 101, 255, 0.3); /* Glowing effect */
+}
+
+/* Name Text */
+header h1 {
+    font-size: 5vw; /* Responsive text size */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7); /* Glowing text effect */
+}
+
+/* Subheading below Name */
+header p {
+    font-size: 1.5vw; /* Responsive size for the subtitle */
+    margin-top: 15px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Light glow for subtitle */
+}
+
+/* Profile Picture in the Header */
+header img.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-top: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.8); /* Glowing effect on photo */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline Animation on Hover */
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover:before {
+    width: 100%; /* Full underline on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Increased gap for better spacing */
+}
+
+.skill-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-15px); /* Hover effect */
+}
+
+.skill-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.skill-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Hide Menu Toggle */
+.menu-toggle {
+    display: none;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 600px; /* Limit the width for better readability */
+    line-height: 1.6; /* Increase line height for readability */
+    font-size: 1.2rem; /* Adjust font size for convenience */
+    margin: 0 auto;
+    color: #333; /* Adjust text color for readability */
+}
+
+/* About Me Section Styles */
+#about {
+    text-align: center; /* Center the content */
+}
+
+#about p {
+    max-width: 1200px; /* Set a maximum width for readability */
+    margin: 0 auto; /* Center the paragraphs */
+    font-size: 1.2rem; /* Adjust font size as necessary */
+    line-height: 1.5; /* Set line height for better readability */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center align the cards */
+}
+
+.project-card {
+    display: flex; /* Make the card a flex container */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space items vertically */
+    background-color: #f9f9f9; /* Card background color */
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    width: 300px; /* Fixed width for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s; /* Animation for hover effect */
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit color from parent element */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.project-title {
+    font-size: 1.5em; /* Adjust as needed for the title size */
+    font-weight: bold; /* Make it bold */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide any overflow if needed */
+    text-overflow: ellipsis; /* Add ellipsis if the text is too long */
+}
+
+.project-description {
+    font-size: 16px; /* Description font size */
+    margin-top: 10px; /* Space above the description */
+    line-height: 1.5; /* Increase line height for better readability */
+    color: #555; /* Dark gray color for better contrast */
+    overflow: hidden; /* Hide overflow text */
+    display: -webkit-box; /* Required for WebKit browsers */
+    -webkit-box-orient: vertical; /* Required for WebKit browsers */
+    -webkit-line-clamp: 3; /* Number of lines to display before truncating */
+    max-height: 4.5em; /* Set a maximum height based on line-height */
+    text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+}
+
+
+.project-links {
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: space-between; /* Space buttons evenly */
+    margin-top: auto; /* Automatically push to bottom */
+}
+
+.link-button {
+    display: flex; /* Use flex to align text */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    background-color: #2575fc; 
+    color: white; 
+    padding: 10px; /* Padding for buttons */
+    border-radius: 5px; 
+    text-decoration: none; 
+    flex: 1; /* Make buttons take equal width */
+    margin: 5px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.link-button:hover {
+    background-color: #6a11cb; /* Change color on hover */
+}
+.project-year {
+    font-size: 14px; /* Adjust size as needed */
+    color: #777; /* Light gray color for year */
+    margin-bottom: 5px; /* Space below the year */
+    text-align: center; /* Center align the year */
+    font-weight: bold; /* Optional: make the year bold for emphasis */
+}
+
+/* Swipe down text styling */
+.swipe-down-text {
+    position: absolute;
+    bottom: 30px; /* Adjusted to move the text closer to the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px; /* Smaller font size */
+    color: #f0f0f0; /* Light gray for dark background */
+    text-align: center;
+    animation: bounce 1s infinite; /* Bounce animation */
+    cursor: pointer;
+    display: inline-block;
+    opacity: 1; /* Fully visible */
+    transition: opacity 0.5s ease; /* Transition for fade effect */
+}
+
+/* Optional: add a class to trigger fade out */
+.fade-out {
+    opacity: 0; /* Make it fully transparent */
+    pointer-events: none; /* Prevent interaction when faded out */
+}
+
+
+/* Keyframes for fade out effect */
+@keyframes fadeOut {
+    0% {
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        opacity: 0; /* Fully transparent */
+    }
+}
+
+/* Optional: add a class to trigger fade out */
+.swipe-down-text.fade-out {
+    animation: fadeOut 0.5s forwards; /* Apply fade out animation */
+}
+
+
+/* Arrow icon styling */
+.down-arrow {
+    width: 50px; /* Set the width to a suitable value */
+    height: 40px; /* Keep height slightly smaller than width */
+    display: block; /* Ensures the element behaves like a block element */
+    margin: 5px auto 0; /* Center it horizontally with auto margins */
+    filter: brightness(0) invert(1); /* Change to white color */
+    animation: bounce-arrow 2s infinite; /* Bouncing animation */
+    color: #f0f0f0; /* Light gray for dark background */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+/* Hidden state for down arrow */
+.down-arrow-hidden {
+    opacity: 0; /* Completely hidden when this class is added */
+    pointer-events: none; /* Prevent interaction when hidden */
+    z-index: 0; /* Set z-index to 0 when hidden */
+}
+
+/* Simple bounce animation for arrow */
+@keyframes bounce-arrow {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Icon credit styling */
+.icon-credit {
+    font-size: 12px; /* Smaller font size for credit text */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icon-credit a {
+    color: #ccc; /* Light gray color */
+    text-decoration: none;
+}
+
+.icon-credit a:hover {
+    text-decoration: underline;
+}
+/* Swipe down text styling */
+#swipe-down {
+    position: fixed; /* Keep it in place */
+    bottom: 20px; /* Distance from the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1; /* Fully visible by default */
+    transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.swipe-down-hidden {
+    opacity: 0; /* Completely hidden when this class is added */
+    pointer-events: none; /* Prevent interaction when hidden */
+    z-index: 0; /* Set z-index to 0 when hidden */
+}
+
+
+
+@media (max-width: 768px) {
+    .skills-container,
+    .projects-container {
+        flex-direction: column;
+        align-items: center; /* Center items on small screens */
+    }
+    .skill-card, .project-card {
+        width: 90%; /* Take full width on smaller screens */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+}
+/* Contact Section Styles */
+/* Contact Section Styles */
+#contact {
+    padding: 40px 20px; /* Add padding */
+    text-align: center; /* Center align text */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.contact-details {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap items to next line if necessary */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between items */
+    margin-top: 20px; /* Margin above contact items */
+}
+
+.contact-item {
+    background-color: white; /* White background for each contact item */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside each item */
+    width: 150px; /* Fixed width for contact items */
+    text-align: center; /* Center align text in items */
+}
+
+.contact-icon {
+    width: 40px; /* Set icon width */
+    height: 40px; /* Set icon height */
+    margin-bottom: 10px; /* Space below icons */
+}
+
+h3 {
+    margin: 10px 0; /* Spacing for headings */
+    font-size: 16px; /* Font size for headings */
+    color: #333; /* Dark color for headings */
+}
+
+a {
+    color: #2575fc; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ffffff; /* Change link color on hover */
+}
+.contact-item p {
+    font-size: 12px; /* Reduce the font size for the email */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+#education {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px 10px; /* Reduced padding for compactness */
+}
+
+.education-container {
+    display: flex; /* Flexbox layout for horizontal arrangement */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 15px; /* Slightly reduced spacing between items */
+}
+
+.education-item {
+    background-color: white; /* White background for cards */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px 20px; /* Reduced vertical padding for height */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Increased max width */
+    text-align: left; /* Left-align text */
+}
+
+.education-icon {
+    font-size: 30px; /* Reduced icon size */
+    color: #6a11cb; /* Icon color */
+    margin-bottom: 3px; /* Space below icon */
+}
+
+h3 {
+    font-size: 1.2em; /* Reduced heading size */
+}
+
+p {
+    font-size: 0.9em; /* Smaller paragraph size */
+    margin: 3px 0; /* Further reduced margin for compactness */
+}
+#experience {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px 10px; /* Padding for the section */
+}
+
+.experience-item {
+    background-color: white; /* White background for individual items */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Inner padding for the card */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Limit max width */
+    text-align: left; /* Left-align text */
+    margin: 10px auto; /* Center the item with margin */
+}
+
+#experience h3 {
+    font-size: 1.2em; /* Heading size for job title */
+    color: #333; /* Dark color for headings */
+    margin-bottom: 5px; /* Space below heading */
+}
+
+#experience p {
+    font-size: 0.9em; /* Smaller paragraph size */
+    margin: 5px 0; /* Reduced margin for compactness */
+}
+
+#experience ul {
+    margin: 0; /* Remove default margin */
+    padding-left: 20px; /* Indentation for list */
+    font-size: 0.9em; /* Font size for list items */
+}
+
+#experience li {
+    margin-bottom: 5px; /* Space between list items */
+}
+.resume-button {
+    position: absolute; /* Positioning to place it in the corner */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background-color: #6a11cb; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    font-weight: 500; /* Font weight */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.resume-button:hover {
+    background-color: #5a0fa3; /* Darker shade on hover */
+}

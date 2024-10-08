@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Haymon's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS Link -->
+</head>
+<body>
+    <!-- Full-Screen Header -->
+    <header>
+        <div class="welcome-message">Welcome to my portfolio</div>
+        <img src="final.png" alt="Haymon's Profile Picture" class="profile-pic">
+        <h1>Haymon</h1>
+        <p>Final Year Student at Bannai Amman Institute of Technology</p>
+        <div class="swipe-down-text" id="swipe-down">
+            Swipe down to know me more
+            <a><img src="Img/down_arrow.png" alt="Down Arrow" class="down-arrow"></a>
+        </div>
+        <a href="pdf/Haymon Rs Resume.pdf" class="resume-button" target="_blank">View Resume</a> <!-- Add this line -->
+    </header>            
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle"></div> <!-- Hidden menu toggle -->
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Haymon</p>
+        <p>A passionate computer enthusiast specializing in Python, C Programming, and web development.</p>
+        <p>As a final-year student, I’m eager to explore the tech world and leave my mark in the IT field.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="/Img/python.png" alt="Python" class="skill-icon">
+                <div class="skill-title"><b>Python</b></div>
+                <div class="skill-description">Proficient in data analysis and automation</div>
+            </div>
+            <div class="skill-card">
+                <img src="/Img/C_symbol.png" alt="C Programming" class="skill-icon">
+                <div class="skill-title"><b>C programming</b></div>
+                <div class="skill-description">Experienced in system-level programming</div>
+            </div>
+            <div class="skill-card">
+                <img src="/Img/web.png" alt="Web Development" class="skill-icon">
+                <div class="skill-title"><b>Web Development</b></div>
+                <div class="skill-description">HTML, CSS, JavaScript</div>
+            </div>
+            <div class="skill-card">
+                <img src="/Img/cloud.png" alt="Cloud" class="skill-icon">
+                <div class="skill-title"><b>SQL</b></div>
+                <div class="skill-description">Database management & cloud storage</div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <div class="project-year">Ongoing</div> <!-- Moved Year Above Title -->
+            <div class="project-title">Early Detection of Osteoporosis</div>
+            <div class="project-description">
+                <span class="truncated-description">A project focused on using deep learning techniques for the early detection of osteoporosis.</span>
+                <span class="project-tooltip">
+                    A project focused on using deep learning techniques for the early detection of osteoporosis.
+                </span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/your-github-repo" class="link-button">GitHub</a>
+                <a href="https://yourprojectlink.com" class="link-button">View Project</a>
+            </div>
+        </div> 
+        <div class="project-card">
+            <div class="project-year">2024</div>
+            <h3 class="project-name">2048 Game</h3>
+            <p>A fun and challenging puzzle game that involves combining numbered tiles.</p>
+            <div class="project-links">
+                <a href="https://github.com/your-username/2048-game" target="_blank" class="link-button">GitHub</a>
+                <a href="https://your-live-project-link.com" target="_blank" class="link-button">View Project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-year">2023</div>
+            <h3 class="project-name">Video Streaming Platform</h3>
+            <p>A full-featured video streaming platform with user authentication and content management.</p>
+            <div class="project-links">
+                <a href="https://github.com/your-username/video-streaming-platform" target="_blank" class="link-button">GitHub</a>
+                <a href="https://your-live-project-link.com" target="_blank" class="link-button">View Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Experience Section -->
+<section id="experience">
+    <h2>Experience</h2>
+    <p>Here are some of the places where I've gained valuable experience in the tech field.</p>
+    <div class="experience-item">
+        <h3>Data Visualization Intern</h3>
+        <p><strong>Accenture (Forage)</strong></p>
+        <p>Online</p>
+        <p>February 2023</p>
+        <ul>
+            <li>Worked on a project to visualize data as insights according to client requirements.</li>
+            <li>Specialized in Data Visualization at Accenture (Forage).</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- Education Section -->
+<section id="education">
+    <h2 style="color: black; text-align: center;">Education</h2>
+    <div class="education-container">
+
+        <div class="education-item">
+            <div class="education-icon">&#127891;</div> <!-- Icon for Undergraduate -->
+            <h3>Under Graduate</h3>
+            <p><strong>Bachelor of Technology in Information Technology</strong></p>
+            <p>Sathyamangalam, Tamil Nadu, India</p>
+            <p>November 2021 – Present</p>
+            <p>CGPA: 6.5</p>
+        </div>
+
+        <div class="education-item">
+            <div class="education-icon">&#127891;</div> <!-- Icon for HSC -->
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <p><strong>Dharani Matric hr sec School</strong></p>
+            <p>Mannargudi, Thiruvarur, Tamil Nadu, India</p>
+            <p>June 2018 – March 2020</p>
+            <p>Percentage: 84%</p>
+        </div>
+
+        <div class="education-item">
+            <div class="education-icon">&#127891;</div> <!-- Icon for SSC -->
+            <h3>Secondary School Certificate (SSC)</h3>
+            <p><strong>Dharani Matric hr sec School</strong></p>
+            <p>Mannargudi, Thiruvarur, Tamil Nadu, India</p>
+            <p>June 2016 – March 2018</p>
+            <p>Percentage: 87.8%</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2 >Contact Haymon</h2>
+    <p>Get in touch with me to get the ball rolling</p>
+    <div class="contact-details">
+        <div class="contact-item">
+            <img src="Img/gmail.png" alt="Email Icon" class="contact-icon">
+            <h3>Email</h3>
+            <p><a href="mailto:haymon2003@gmail.com">haymon2003@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+            <img src="Img/github.png" alt="GitHub Icon" class="contact-icon">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/HaymonRS">HaymonRS</a></p>
+        </div>
+        <div class="contact-item">
+            <img src="Img/linkedin.png" alt="LinkedIn" class="contact-icon">
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/haymonrs/">haymonrs</a></p>
+        </div>
+        <div class="contact-item">
+            <img src="Img/twitter.png" alt="Twitter Icon" class="contact-icon">
+            <h3>Twitter</h3>
+            <p><a href="https://twitter.com/yourtwitterhandle">Follow us</a></p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Haymon. All Rights Reserved.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
